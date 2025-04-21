@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        .d1{
+            display: inline-block;
+            background-color: gray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        .d1:hover{
+            /* 
+            Quando você passa o cursor do mouse pos cima do item ele vai ficar da cor que vc indicou no HOUVER
+            */
+            background-color: yellow;
+        }
+
+
+        div > p{
+            /*
+            Para o esconder o paragráfo que estádentro dadiv
+            */
+            display: none;
+        }
+
+        div:hover > p{
+            /*
+            Para mostrar o paragráfo queestá dentro da div
+            */
+            display: block;
+        }
+
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">01</div>
+    <div class="d1">02</div>
+    <div class="d1">03</div> 
+
+    <p>passe o mouse sobre o texto abaixo</p>
+
+    <div>
+        <h1>Exemplo de hover</h1>
+        Passe o mouse aqui
+        <p>to entendendo é nada</p>
+    
+    </div>
+</body>
+</html>
