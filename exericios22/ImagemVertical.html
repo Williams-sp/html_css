@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizarimagem vertical</title>
+    <style>
+        #conteiner{
+            position: relative;
+            height: 100vh;
+            
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo{
+            position: absolute;
+            background-color: yellow;
+            height: 200px;
+            width: 400px;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit earum mollitia labore amet dolorum similique veniam ipsum, voluptate, error consequuntur deserunt? Excepturi, nemo accusantium facere cumque vitae fugit adipisci quae!</p>
+
+        </article>
+
+    </section>
+</body>
+</html>
