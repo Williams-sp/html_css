@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: left;
+            
+        }
+        table{
+            width: 50%;
+        }
+        tr{
+            height: 50%;
+        }
+    
+        th{
+            text-align: center;
+        }
+
+        tr:nth-child(even){
+            background-color: lightgray;
+        }
+
+        tr:hover{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Tabela</h1>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>idade</th>
+            <th>Cargo</th>
+        </tr>
+        <tr>
+            <td>ana</td>
+            <td>25</td>
+            <td>Diretora</td>
+        </tr>
+        <tr>
+            <td>carlos</td>
+            <td>30</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Williams</td>
+            <td>30</td>
+            <td>Programador</td>
+        </tr>
+    </table>
+</body>
+</html>
