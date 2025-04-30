@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="4" required>
+            </p>
+            <p>
+                <label for="imail">E-mail:</label>
+                <input type="email" name="email" id="imail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)-xxxx-xxxx">
+            </p>
+            
+        </fieldset>
+       
+        <h1>Selecione seus esportes favoritos</h1>
+        <form action="cadastro.php" method="get" >
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+                <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label>
+                <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+                <input type="checkbox" name="esnat" id="iesten"> Natação
+                <input type="checkbox" name="esten" id="iesten"> Tenis
+            </fieldset>
+
+
+            <fieldset>
+                <!--Botões do tipo radio,só podem marcar uma opção e o nome precisaser igualpara todos os botões  -->
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="isema"> <label for="isema"> Masculino</label>
+                <input type="radio" name="sexo" id="osefe"> <label for="isefe"> Feminino</label>
+            </fieldset>
+
+             <h1>Exemplo de formulários</h1>
+            <form action="cadastro.php" method="get">
+                <p>
+                    <label for="icor" >Cor:</label>
+                    <input type="color" name="cor" id="icor">
+                </p>
+                <p>
+                    <label for="inivel" >Nível de satisfação</label>
+                    <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
+                </p>
+                <p>
+                    <label for="ifoto">Foto do perfil: </label>
+                    <input type="file" name="foto" id="ifoto">
+                </p>
+            </form>
+            <form action="cadasro.php" method="get" autocomplete="on">
+                <p>
+                    <label for="iest">Estado</label>
+                    <select name="estado" id="iest">
+                        <optgroup label="Região suldeste"> 
+                            <option value="MG">Minas Gerais</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                        </optgroup>
+                        <optgroup label="Região nordeste">
+                            <option value="MA">Maranhão</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="RN">Rio Grande Do Sul</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option >Administrador</option>
+                    <option >Contador</option>
+                    <option >Engenheiro</option>
+                    <option >Programador</option>
+                    <option >Arquiteto</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Mensage,:</label>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+
+            </form>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+           
+
+
+        </form>
+        
+    </form>
+    
+</body>
+</html>
