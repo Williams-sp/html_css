@@ -1,0 +1,46 @@
+@charset "pt-br";
+
+/* ESTILO PARA TELA*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10m;
+}
+
+header{
+    background-color: lightsalmon;
+
+}
+
+header > h1 {
+    text-align: center;
+}
+
+menu ul{
+    background-color: gray;
+    list-style-type:none;
+    text-align: center;
+}
+
+menu li{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+menu li:hover{
+    background-color: lightsalmon;
+    
+}
+
+article{
+    width: 600px;
+    display: block;
+    margin: auto;
+}
